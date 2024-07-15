@@ -1,0 +1,17 @@
+name: 'Tonion Fire'
+description: 'Deploy Ton Contracts'
+author: 'Tonion'
+
+branding:
+  icon: 'activity'
+  color: 'green'
+
+runs:
+  using: 'node22'
+  main: 'dist/index.js'
+
+inputs:
+  network:
+    description: 'testnet or mainnet'
+    required: true
+    default: 'mainnet'
